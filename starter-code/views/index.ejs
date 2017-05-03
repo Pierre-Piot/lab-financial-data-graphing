@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>TITLE</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="chart.js/dist/Chart.min.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+  <button id="getdata">Coin button</button>
+
+  <input type="date" id="startDate">
+  <input type="date" id="endDate">
+
+<select id="currency">
+  <option value="usd">USD</option>
+  <option value="eur">EUR</option>
+</select>
+
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+
+<script src="js/index.js"></script> 
+</body>
+
 </html>
+
+
